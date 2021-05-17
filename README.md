@@ -11,6 +11,7 @@ This is a tool to login UM Spectrum by using python requests
 2. edit the ```login.py``` file, change line 5 - line 6 with your own information
 3. run the code
 
+You are free to merge the code into your own project.
 <hr>
 
 # UM-Spectrum-Login
@@ -26,6 +27,7 @@ This is a tool to login UM Spectrum by using python requests
 2. 编辑``login.py``文件，用你自己的信息修改第5-6行
 3. 运行代码
 
-
+你可以自由地将这些代码合并到你自己的项目中。
+<hr>
 
 If there are any copyright problems please commit an issue via GitHub. Thanks.
