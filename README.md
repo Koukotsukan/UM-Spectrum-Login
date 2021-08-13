@@ -1,5 +1,11 @@
 # UM-Spectrum-Login
-This is a tool to login UM Spectrum by using python requests
+This is a tool to login UM Spectrum by using python requests. It contains 2 py files:
+
+#### login.py
++ using sessions, easier way to use
+
+#### step_by_step.py
++ using seperated requests, to merge into other program
 
 ## Prerequisites:
 + python3
@@ -15,7 +21,15 @@ You are free to merge the code into your own project.
 <hr>
 
 # UM-Spectrum-Login
-这是一个通过使用python requests登录UM Spectrum的工具。
+这是一个通过使用python requests登录UM Spectrum的工具。包含两个py文件：
+
+
+#### login.py
++ 使用session，更快速便捷的登陆
+
+
+#### step_by_step.py
++ 分开的网络请求，便于整合其他功能
 
 ## 需要：
 + python3
