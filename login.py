@@ -5,7 +5,7 @@ def login():
 	uname = "YOUR USER NAME"
 	password = "YOUR PASSWORD"
 	s = requests.session()
-	url = "https://casv.um.edu.my/cas/loginAllType?service=https%3A%2F%2Fspectrum.um.edu.my%2Flogin%2Findex.php"
+	url = "https://sso.um.edu.my/cas/loginAllType?service=https%3A%2F%2Fspectrum.um.edu.my%2Flogin%2Findex.php"
 	sourceCode = s.get(url)
 	lt = re.findall('value="(.*)"', str(re.findall('<input type="hidden" name="lt" value=".*" />', sourceCode.text)))[0]
 	print(lt)
