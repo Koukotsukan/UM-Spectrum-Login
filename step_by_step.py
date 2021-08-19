@@ -4,7 +4,7 @@ import re
 account = "#YOUR ACCOUNT WITHOUT EMAIL SUFFIX"
 password = "#YOUR PASSWORD"
 url = "https://spectrum.um.edu.my"
-casvURL = "https://casv.um.edu.my/cas/loginAllType?service=https://spectrum.um.edu.my/login/index.php"
+casvURL = "https://sso.um.edu.my/cas/loginAllType?service=https://spectrum.um.edu.my/login/index.php"
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:90.0) Gecko/20100101 Firefox/90.0"
 }
@@ -34,7 +34,7 @@ data = {
 }
 # Get location from header to register your original cookies
 getLocation = requests.post(
-    url="https://casv.um.edu.my/cas/loginAllType;jsessionid=" + casvCOOKIES + "?service=https://spectrum.um.edu.my/login/index.php",
+    url="https://sso.um.edu.my/cas/loginAllType;jsessionid=" + casvCOOKIES + "?service=https://spectrum.um.edu.my/login/index.php",
     headers=headers, data=data, allow_redirects=False)
 location = getLocation.headers['location']
 print("location: " + location)
