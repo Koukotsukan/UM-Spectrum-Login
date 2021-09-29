@@ -51,7 +51,7 @@ getNewCookieHeaders = {
 }
 getNewCookie = requests.get(getNewCookieURL, headers=getNewCookieHeaders)
 # Test if we are logged in
-print("logged in: " + str(re.findall("Niu Zhaohang", getNewCookie.text)))
+print("logged in: " + str(re.findall("YOUR SPECTRUM USERNAME HERE", getNewCookie.text)))
 
 loginHeaders = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:90.0) Gecko/20100101 Firefox/90.0",
